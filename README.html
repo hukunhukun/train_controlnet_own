@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<!-- saved from url=(0084)file:///C:/Users/kunhu10/AppData/Local/Temp/crossnote2024129-13228-1v7ifkj.he54.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>README</title>
+      
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="./README_files/katex.min.css">
+      
+      
+      
+      
+      
+      <style>
+      code[class*=language-],pre[class*=language-]{color:#333;background:0 0;font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.4;-moz-tab-size:8;-o-tab-size:8;tab-size:8;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:.8em;overflow:auto;border-radius:3px;background:#f5f5f5}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal;background:#f5f5f5}.token.blockquote,.token.comment{color:#969896}.token.cdata{color:#183691}.token.doctype,.token.macro.property,.token.punctuation,.token.variable{color:#333}.token.builtin,.token.important,.token.keyword,.token.operator,.token.rule{color:#a71d5d}.token.attr-value,.token.regex,.token.string,.token.url{color:#183691}.token.atrule,.token.boolean,.token.code,.token.command,.token.constant,.token.entity,.token.number,.token.property,.token.symbol{color:#0086b3}.token.prolog,.token.selector,.token.tag{color:#63a35c}.token.attr-name,.token.class,.token.class-name,.token.function,.token.id,.token.namespace,.token.pseudo-class,.token.pseudo-element,.token.url-reference .token.variable{color:#795da3}.token.entity{cursor:help}.token.title,.token.title .token.punctuation{font-weight:700;color:#1d3e81}.token.list{color:#ed6a43}.token.inserted{background-color:#eaffea;color:#55a532}.token.deleted{background-color:#ffecec;color:#bd2c00}.token.bold{font-weight:700}.token.italic{font-style:italic}.language-json .token.property{color:#183691}.language-markup .token.tag .token.punctuation{color:#333}.language-css .token.function,code.language-css{color:#0086b3}.language-yaml .token.atrule{color:#63a35c}code.language-yaml{color:#183691}.language-ruby .token.function{color:#333}.language-markdown .token.url{color:#795da3}.language-makefile .token.symbol{color:#795da3}.language-makefile .token.variable{color:#183691}.language-makefile .token.builtin{color:#0086b3}.language-bash .token.keyword{color:#0086b3}pre[data-line]{position:relative;padding:1em 0 1em 3em}pre[data-line] .line-highlight-wrapper{position:absolute;top:0;left:0;background-color:transparent;display:block;width:100%}pre[data-line] .line-highlight{position:absolute;left:0;right:0;padding:inherit 0;margin-top:1em;background:hsla(24,20%,50%,.08);background:linear-gradient(to right,hsla(24,20%,50%,.1) 70%,hsla(24,20%,50%,0));pointer-events:none;line-height:inherit;white-space:pre}pre[data-line] .line-highlight:before,pre[data-line] .line-highlight[data-end]:after{content:attr(data-start);position:absolute;top:.4em;left:.6em;min-width:1em;padding:0 .5em;background-color:hsla(24,20%,50%,.4);color:#f4f1ef;font:bold 65%/1.5 sans-serif;text-align:center;vertical-align:.3em;border-radius:999px;text-shadow:none;box-shadow:0 1px #fff}pre[data-line] .line-highlight[data-end]:after{content:attr(data-end);top:auto;bottom:.4em}html body{font-family:'Helvetica Neue',Helvetica,'Segoe UI',Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ol,html body>ul{margin-bottom:16px}html body ol,html body ul{padding-left:2em}html body ol.no-list,html body ul.no-list{padding:0;list-style-type:none}html body ol ol,html body ol ul,html body ul ol,html body ul ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:700;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::after,html body code::before{letter-spacing:-.2em;content:'\00a0'}html body pre>code{padding:0;margin:0;word-break:normal;white-space:pre;background:0 0;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:after,html body pre code:before,html body pre tt:after,html body pre tt:before{content:normal}html body blockquote,html body dl,html body ol,html body p,html body pre,html body ul{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body code,html body pre{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview ul{list-style:disc}.markdown-preview ul ul{list-style:circle}.markdown-preview ul ul ul{list-style:square}.markdown-preview ol{list-style:decimal}.markdown-preview ol ol,.markdown-preview ul ol{list-style-type:lower-roman}.markdown-preview ol ol ol,.markdown-preview ol ul ol,.markdown-preview ul ol ol,.markdown-preview ul ul ol{list-style-type:lower-alpha}.markdown-preview .newpage,.markdown-preview .pagebreak{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center!important}.markdown-preview:not([data-for=preview]) .code-chunk .code-chunk-btn-group{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .status{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0;min-height:100vh}@media screen and (min-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{font-size:14px!important;padding:1em}}@media print{html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div,html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% - 300px);padding:2em calc(50% - 457px - 300px / 2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+      <!-- The content below will be included at the end of the <head> element. --><script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+    // your code here
+  });
+</script></head><body for="html-export">
+    
+    
+      <div class="crossnote markdown-preview  ">
+      
+<h1 id="输入法皮肤生成">输入法皮肤生成 </h1>
+
+<div class="md-toc">
+<details style="padding:0;;padding-left:0px;" open="">
+        <summary class="md-toc-link-wrapper">
+          <a href="file:///C:/Users/kunhu10/AppData/Local/Temp/crossnote2024129-13228-1v7ifkj.he54.html#1-%E9%98%B6%E6%AE%B51" class="md-toc-link"><ol>
+<li>阶段1</li>
+</ol>
+</a>
+          </summary>
+        <div>
+          <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="file:///C:/Users/kunhu10/AppData/Local/Temp/crossnote2024129-13228-1v7ifkj.he54.html#-%E6%96%B9%E6%A1%88%E7%A1%AE%E5%AE%9A" class="md-toc-link">
+            <p>😀 方案确定</p>
+
+          </a></div><details style="padding:0;;padding-left:24px;" open="">
+        <summary class="md-toc-link-wrapper">
+          <a href="file:///C:/Users/kunhu10/AppData/Local/Temp/crossnote2024129-13228-1v7ifkj.he54.html#-%E6%96%B9%E6%A1%88%E9%AA%8C%E8%AF%81" class="md-toc-link"><p>😀 方案验证</p>
+</a>
+          </summary>
+        <div>
+          <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="file:///C:/Users/kunhu10/AppData/Local/Temp/crossnote2024129-13228-1v7ifkj.he54.html#%E5%89%8D%E6%9C%9F%E5%87%86%E5%A4%87" class="md-toc-link">
+            <p>⚙前期准备</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="file:///C:/Users/kunhu10/AppData/Local/Temp/crossnote2024129-13228-1v7ifkj.he54.html#%E6%95%B0%E6%8D%AE%E9%9B%86%E5%87%86%E5%A4%87" class="md-toc-link">
+            <p>📕数据集准备</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="file:///C:/Users/kunhu10/AppData/Local/Temp/crossnote2024129-13228-1v7ifkj.he54.html#%E6%A8%A1%E5%9E%8B%E8%AE%AD%E7%BB%83" class="md-toc-link">
+            <p>模型训练</p>
+
+          </a></div>
+        </div>
+      </details>
+    
+        </div>
+      </details>
+    <details style="padding:0;;padding-left:0px;" open="">
+        <summary class="md-toc-link-wrapper">
+          <a href="file:///C:/Users/kunhu10/AppData/Local/Temp/crossnote2024129-13228-1v7ifkj.he54.html#2-%E9%98%B6%E6%AE%B52" class="md-toc-link"><ol start="2">
+<li>阶段2</li>
+</ol>
+</a>
+          </summary>
+        <div>
+          <details style="padding:0;;padding-left:24px;" open="">
+        <summary class="md-toc-link-wrapper">
+          <a href="file:///C:/Users/kunhu10/AppData/Local/Temp/crossnote2024129-13228-1v7ifkj.he54.html#-%E5%AE%9E%E9%AA%8C%E4%B8%80%E5%85%A8%E9%94%AE%E7%9B%98%E7%9A%AE%E8%82%A4%E6%95%B0%E6%8D%AE%E8%AE%AD%E7%BB%83" class="md-toc-link"><p>😀 实验一：全键盘皮肤数据训练</p>
+</a>
+          </summary>
+        <div>
+          <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="file:///C:/Users/kunhu10/AppData/Local/Temp/crossnote2024129-13228-1v7ifkj.he54.html#%E6%95%B0%E6%8D%AE%E9%9B%86%E5%87%86%E5%A4%87-1" class="md-toc-link">
+            <p>📕数据集准备</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="file:///C:/Users/kunhu10/AppData/Local/Temp/crossnote2024129-13228-1v7ifkj.he54.html#%E6%A8%A1%E5%9E%8B%E8%AE%AD%E7%BB%83-1" class="md-toc-link">
+            <p>模型训练</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="file:///C:/Users/kunhu10/AppData/Local/Temp/crossnote2024129-13228-1v7ifkj.he54.html#%E5%AE%9E%E9%AA%8C%E7%BB%93%E6%9E%9C" class="md-toc-link">
+            <p>实验结果</p>
+
+          </a></div>
+        </div>
+      </details>
+    <details style="padding:0;;padding-left:24px;" open="">
+        <summary class="md-toc-link-wrapper">
+          <a href="file:///C:/Users/kunhu10/AppData/Local/Temp/crossnote2024129-13228-1v7ifkj.he54.html#-%E5%AE%9E%E9%AA%8C%E4%BA%8C%E5%88%86%E5%9D%97%E9%94%AE%E7%9B%98%E7%9A%AE%E8%82%A4%E6%95%B0%E6%8D%AE%E8%AE%AD%E7%BB%83" class="md-toc-link"><p>😀 实验二：分块键盘皮肤数据训练</p>
+</a>
+          </summary>
+        <div>
+          <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="file:///C:/Users/kunhu10/AppData/Local/Temp/crossnote2024129-13228-1v7ifkj.he54.html#%E6%95%B0%E6%8D%AE%E9%9B%86%E5%87%86%E5%A4%87-2" class="md-toc-link">
+            <p>📕数据集准备</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="file:///C:/Users/kunhu10/AppData/Local/Temp/crossnote2024129-13228-1v7ifkj.he54.html#%E6%A8%A1%E5%9E%8B%E8%AE%AD%E7%BB%83-2" class="md-toc-link">
+            <p>模型训练</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="file:///C:/Users/kunhu10/AppData/Local/Temp/crossnote2024129-13228-1v7ifkj.he54.html#%E5%AE%9E%E9%AA%8C%E7%BB%93%E6%9E%9C-1" class="md-toc-link">
+            <p>实验结果</p>
+
+          </a></div>
+        </div>
+      </details>
+    
+        </div>
+      </details>
+    <details style="padding:0;;padding-left:0px;" open="">
+        <summary class="md-toc-link-wrapper">
+          <a href="file:///C:/Users/kunhu10/AppData/Local/Temp/crossnote2024129-13228-1v7ifkj.he54.html#3-%E9%98%B6%E6%AE%B53" class="md-toc-link"><ol start="3">
+<li>阶段3</li>
+</ol>
+</a>
+          </summary>
+        <div>
+          <details style="padding:0;;padding-left:24px;" open="">
+        <summary class="md-toc-link-wrapper">
+          <a href="file:///C:/Users/kunhu10/AppData/Local/Temp/crossnote2024129-13228-1v7ifkj.he54.html#-%E5%AE%9E%E9%AA%8C%E4%B8%80%E5%85%B3%E9%94%AE%E9%94%AE%E7%9B%98%E5%85%83%E7%B4%A0%E5%B8%83%E5%B1%80%E7%9A%AE%E8%82%A4" class="md-toc-link"><p>😀 实验一：关键键盘元素布局皮肤</p>
+</a>
+          </summary>
+        <div>
+          <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="file:///C:/Users/kunhu10/AppData/Local/Temp/crossnote2024129-13228-1v7ifkj.he54.html#-%E6%95%B0%E6%8D%AE%E5%87%86%E5%A4%87" class="md-toc-link">
+            <p>📕 数据准备</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="file:///C:/Users/kunhu10/AppData/Local/Temp/crossnote2024129-13228-1v7ifkj.he54.html#%E6%A8%A1%E5%9E%8B%E8%AE%AD%E7%BB%83-3" class="md-toc-link">
+            <p>模型训练</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="file:///C:/Users/kunhu10/AppData/Local/Temp/crossnote2024129-13228-1v7ifkj.he54.html#%E5%AE%9E%E9%AA%8C%E7%BB%93%E6%9E%9C-2" class="md-toc-link">
+            <p>实验结果</p>
+
+          </a></div>
+        </div>
+      </details>
+    <details style="padding:0;;padding-left:24px;" open="">
+        <summary class="md-toc-link-wrapper">
+          <a href="file:///C:/Users/kunhu10/AppData/Local/Temp/crossnote2024129-13228-1v7ifkj.he54.html#-%E5%AE%9E%E9%AA%8C%E4%BA%8C%E6%B7%BB%E5%8A%A0ctc-loss%E7%9B%91%E7%9D%A3%E5%9B%BE%E7%89%87%E4%B8%AD%E7%9A%84%E6%96%87%E6%9C%AC%E7%94%9F%E6%88%90" class="md-toc-link"><p>😀 实验二：添加ctc-loss监督图片中的文本生成</p>
+</a>
+          </summary>
+        <div>
+          <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="file:///C:/Users/kunhu10/AppData/Local/Temp/crossnote2024129-13228-1v7ifkj.he54.html#-%E6%95%B0%E6%8D%AE%E5%87%86%E5%A4%87-1" class="md-toc-link">
+            <p>📕 数据准备</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="file:///C:/Users/kunhu10/AppData/Local/Temp/crossnote2024129-13228-1v7ifkj.he54.html#%E6%A8%A1%E5%9E%8B%E8%AE%AD%E7%BB%83-4" class="md-toc-link">
+            <p>模型训练</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="file:///C:/Users/kunhu10/AppData/Local/Temp/crossnote2024129-13228-1v7ifkj.he54.html#%E5%AE%9E%E9%AA%8C%E7%BB%93%E6%9E%9C-3" class="md-toc-link">
+            <p>实验结果</p>
+
+          </a></div>
+        </div>
+      </details>
+    
+        </div>
+      </details>
+    <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:18px">
+          <a href="file:///C:/Users/kunhu10/AppData/Local/Temp/crossnote2024129-13228-1v7ifkj.he54.html#4-%E5%90%8E%E7%BB%AD" class="md-toc-link">
+            <ol start="4">
+<li>后续</li>
+</ol>
+
+          </a></div>
+</div>
+<h2 id="1-阶段1">1. 阶段1 </h2>
+<h3 id="-方案确定">😀 方案确定 </h3>
+<ul>
+<li>
+<p>确定方案为使用 Controlnet 控制图片生成</p>
+</li>
+<li>
+<p>旨在达到图中效果，根据控制图片的规范生成图片的轮廓，细节交由模型自己生成</p>
+</li>
+</ul>
+<img src="./README_files/fig1.jpg" width="500" height="500">
+<h3 id="-方案验证">😀 方案验证 </h3>
+<h4 id="前期准备">⚙前期准备 </h4>
+<ul>
+<li>环境配置</li>
+</ul>
+<pre data-role="codeBlock" data-info="sh" class="language-bash sh"><code>python <span class="token operator">=</span> <span class="token number">3.10</span>
+torch <span class="token operator">=</span> <span class="token number">1.13</span>.1+cu117
+pip <span class="token function">install</span> requirements.txt <span class="token parameter variable">-r</span>
+</code></pre><p>or</p>
+<p>copy kunhu10 conda创建的 <code>diff</code> 虚拟环境</p>
+<ul>
+<li>
+<p>diffusion 基础模型为 stable-diffusion-xl-base-1.0<br>
+存储在 <code>/train21/intellQA/permanent/kunhu10/diffusers-main/base_models/stable-diffusion-xl-base-1.0</code></p>
+</li>
+<li>
+<p>图片 caption 模型 Blip 模型存储在 <code>/train21/intellQA/permanent/kunhu10/diffusers-main/base_models/blip-image-captioning-large</code></p>
+</li>
+</ul>
+<h4 id="数据集准备">📕数据集准备 </h4>
+<ul>
+<li>
+<p>为了确定 <a href="https://github.com/huggingface/diffusers">diffusers</a> (<code>diffusers-main/examples/controlnet/train_controlnet_sdxl.py</code>) 代码的可行性，使用 <code>fill50k</code> 数据集进行了验证</p>
+</li>
+<li>
+<p>该数据集具有如下格式，目标图片，控制图片，以及文本描述文件 <code>train.jsonl</code>，如下</p>
+</li>
+</ul>
+<p><code>{"text": "pale golden rod circle with old lace background", "image": "images/0.png", "conditioning_image": "conditioning_images/0.png"}</code><br>
+<img src="./README_files/images0.png" width="200" height="200">&nbsp;&nbsp;<img src="./README_files/conditioning_images0.png" width="200" height="200"></p>
+<ul>
+<li>保存在 <code>/train21/intellQA/permanent/kunhu10/diffusers-main/dataset/controlnet/fill50k/</code>中，其中包括如下文件</li>
+</ul>
+<pre data-role="codeBlock" data-info="" class="language-text text"><code>-fill50k\
+---conditioning_image\
+---iamges\
+---fill50k.py
+---train.jsonl
+</code></pre><ul>
+<li>
+<p>由于数据下载在本地，对 <code>fill50k.py</code> 进行修改给定数据存储路径:<br>
+<img src="./README_files/fill50kpy.png" width="800" height="80"></p>
+</li>
+<li>
+<p>加载数据集时使用 <code>dataset</code> 中的 <code>load_dataset</code> 方法加载</p>
+</li>
+</ul>
+<pre data-role="codeBlock" data-info="py" class="language-python py"><code><span class="token keyword keyword-from">from</span> datasets <span class="token keyword keyword-import">import</span> load_dataset
+
+dataset <span class="token operator">=</span> load_dataset<span class="token punctuation">(</span>train_data_dir<span class="token punctuation">)</span>
+</code></pre><h4 id="模型训练">模型训练 </h4>
+<ul>
+<li>对训练代码无需进行修改，只需要在脚本文件 <code>controlnet.sh</code> 文件中修改数据集路径 <code>train_data_dir</code> 为对应 <code>py</code> 文件位置，脚本文件位置 <code>/train21/intellQA/permanent/kunhu10/diffusers-main/controlnet.sh</code><br>
+<img src="./README_files/run_sh.png" width="800" height="220"></li>
+</ul>
+<p>🤗<strong>训练代码解释: train_controlnet_sdxl.py</strong></p>
+<ul>
+<li>line 66-164: <code>def log_validation()</code><br>
+若在训练脚本中添加验证prompt以及conditioning_images，则在达到验证 step 时调用该函数，推理出图验证结果，并加载到 log 中</li>
+<li>line 166-184: <code>def import_model_class_from_model_name_or_path()</code><br>
+给定下载的模型权重路径，加载模型</li>
+<li>line 224-591: <code>def parse_args()</code><br>
+定义命令行参数，除了训练的默认超参数外，需要注意给定了加载数据集时默认的列名称<br>
+<img src="./README_files/args.png" width="600" height="200"><br>
+这与 <code>train.jsonl</code> 中各个数据键值对的名称对应</li>
+<li>line: 593-668: <code>def get_train_dataset()</code><br>
+使用 <code>load_dataset</code> 方法以及 <code>image_column</code> <code>text_column</code> <code>conditioning_column</code> 加载数据，返回初始数据集<br>
+<img src="./README_files/get_dataset.png" width="600" height="260"></li>
+<li>line 671-709: <code>def encode_prompt(prompt_batch,text_encoders)</code><br>
+此函数旨在将文本输入转换为 embedding，给定 batch 内的 prompt 文本， 使用 <code>text_encoder</code> 转换为文本特征</li>
+<li>line 711-745: <code>def prepare_train_dataset()</code><br>
+对数据集进一步处理，包括对 image 数据归一化以及转换为 tensor<br>
+<img src="./README_files/prepare_dataset.png" width="600" height="250"></li>
+<li>line 747-765: <code>def collate_fn()</code><br>
+加载 dataloader 的方法，给出了 batch 中存在 <code>pixel_values, conditioning_pixel_values, prompt_ids, unet_added_conditions</code></li>
+<li>line 767-1246: <code>main()</code> 函数</li>
+<li>line 807-887: 通过下载的模型权重加载模型如 <code>text_encoder</code>,<code>noise_scheduler</code>,<code>vae</code>,<code>unet</code>,<code>controlnet</code>, 并指定只训练 <code>controlnet</code> 部分的参数<pre data-role="codeBlock" data-info="py" class="language-python py"><code>vae<span class="token punctuation">.</span>requires_grad_<span class="token punctuation">(</span><span class="token boolean">False</span><span class="token punctuation">)</span>
+unet<span class="token punctuation">.</span>requires_grad_<span class="token punctuation">(</span><span class="token boolean">False</span><span class="token punctuation">)</span>
+text_encoder_one<span class="token punctuation">.</span>requires_grad_<span class="token punctuation">(</span><span class="token boolean">False</span><span class="token punctuation">)</span>
+text_encoder_two<span class="token punctuation">.</span>requires_grad_<span class="token punctuation">(</span><span class="token boolean">False</span><span class="token punctuation">)</span>
+controlnet<span class="token punctuation">.</span>train<span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre></li>
+<li>line 971-993: 定义了 <code>compute_embeddings()</code> 函数，使用 <code>encode_prompt()</code> 函数对文本部分计算 embeddings 并加载进数据集<br>
+<img src="./README_files/compute_embeddings.png" width="600" height="320"></li>
+<li>line 996-1026: 构建数据集以及用于训练的 dataloader<br>
+<img src="./README_files/train_dataloader.png" width="600" height="460"></li>
+<li>line 1068-1116: prepare to train，print训练参数, 训练进程bar</li>
+<li>line 1117-1223: 加载 batch 内数据开始训练，随机选择一个 step，并预测该步的噪声，使用mse损失函数，以及反向传播过程<br>
+<img src="./README_files/start_train.png" width="600" height="440"></li>
+</ul>
+<h2 id="2-阶段2">2. 阶段2 </h2>
+<h3 id="-实验一全键盘皮肤数据训练">😀 实验一：全键盘皮肤数据训练 </h3>
+<h4 id="数据集准备-1">📕数据集准备 </h4>
+<ul>
+<li>
+<p>选取26键整个整盘的皮肤，统一 reshape 为 512×512 分辨率大小，并描边出conditioning_image 如下<br>
+<img src="./README_files/wholekeyboard.png" width="300" height="300"> &nbsp;&nbsp;<img src="./README_files/wholekeyboard_c.png" width="300" height="300"></p>
+</li>
+<li>
+<p>描边方法使用轮廓检测方法，<code>cv2.Canny</code>，控制图片也要调整为同样大小分辨率，所有目标图片都使用了同一张控制图片</p>
+</li>
+</ul>
+<pre data-role="codeBlock" data-info="py" class="language-python py"><code><span class="token keyword keyword-import">import</span> cv2
+<span class="token keyword keyword-from">from</span> PIL <span class="token keyword keyword-import">import</span> Image
+image <span class="token operator">=</span> cv2<span class="token punctuation">.</span>imread<span class="token punctuation">(</span><span class="token string">"./.."</span><span class="token punctuation">)</span>
+low_threshold <span class="token operator">=</span> <span class="token number">50</span>
+high_threshold <span class="token operator">=</span> <span class="token number">80</span>
+canny_image <span class="token operator">=</span> cv2<span class="token punctuation">.</span>Canny<span class="token punctuation">(</span>image<span class="token punctuation">,</span>low_threshold<span class="token punctuation">,</span>high_threshold<span class="token punctuation">)</span>
+</code></pre><ul>
+<li>
+<p>所有数据存储在 <code>/train21/intellQA/permanent/kunhu10/diffusers-main/dataset/controlnet/keyboard_50/</code>,包含如下文件<br>
+<img src="./README_files/keyboard50.png" width="290" height="150"></p>
+</li>
+<li>
+<p>其中 <code>keyboard_50.py</code> 中同样修改了<code>metadata_path</code>，<code>images_dir</code> 以及 <code>conditioning_images_dir</code></p>
+</li>
+<li>
+<p>对于图片的文本标签，使用 Blip 模型进行注释，将文本注释保存在 <code>train.jsonl</code> 中，实现</p>
+</li>
+</ul>
+<pre data-role="codeBlock" data-info="py" class="language-python py"><code><span class="token keyword keyword-from">from</span> PIL <span class="token keyword keyword-import">import</span> Image
+<span class="token keyword keyword-from">from</span> transformers <span class="token keyword keyword-import">import</span> BlipProcessor<span class="token punctuation">,</span> BlipForConditionalGeneration
+<span class="token keyword keyword-import">import</span> os
+processor <span class="token operator">=</span> BlipProcessor<span class="token punctuation">.</span>from_pretrained<span class="token punctuation">(</span><span class="token string">"/train21/intell0A/permanent/kunhu10/diffusers-main/base_models/blip-image-captioning-large"</span><span class="token punctuation">)</span>
+model <span class="token operator">=</span> BlipForConditionalGeneration<span class="token punctuation">.</span>from_pretrained<span class="token punctuation">(</span>"<span class="token operator">/</span>train21<span class="token operator">/</span>intellQA<span class="token operator">/</span>permanent<span class="token operator">/</span>kunhu10<span class="token operator">/</span>diffusers<span class="token operator">-</span>main<span class="token operator">/</span> \\
+base_models<span class="token operator">/</span>blip<span class="token operator">-</span>image<span class="token operator">-</span>captioning<span class="token operator">-</span>large<span class="token string">").to("</span>cuda<span class="token punctuation">:</span><span class="token number">0</span>"<span class="token punctuation">)</span>
+
+dataset_path <span class="token operator">=</span> <span class="token string">'./dataset/controlnet/keyboard_102/images/'</span>
+image_list <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+text_list <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+<span class="token keyword keyword-for">for</span> i <span class="token keyword keyword-in">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">102</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    raw_image <span class="token operator">=</span> Image<span class="token punctuation">.</span><span class="token builtin">open</span><span class="token punctuation">(</span>dataset_path <span class="token operator">+</span> <span class="token string-interpolation"><span class="token string">f'</span><span class="token interpolation"><span class="token punctuation">{</span>i<span class="token punctuation">}</span></span><span class="token string">.png'</span></span><span class="token punctuation">)</span>
+    image_list<span class="token punctuation">.</span>append<span class="token punctuation">(</span>raw_image<span class="token punctuation">)</span>
+    text_list<span class="token punctuation">.</span>append<span class="token punctuation">(</span><span class="token string">"a keyboard skin of"</span><span class="token punctuation">)</span>
+inputs <span class="token operator">=</span> processor<span class="token punctuation">(</span>image_list<span class="token punctuation">,</span> text_list<span class="token punctuation">,</span> return_tensors<span class="token operator">=</span><span class="token string">"pt"</span><span class="token punctuation">)</span><span class="token punctuation">.</span>to<span class="token punctuation">(</span><span class="token string">"cuda:2"</span><span class="token punctuation">)</span>
+out <span class="token operator">=</span> model<span class="token punctuation">.</span>generate<span class="token punctuation">(</span><span class="token operator">**</span>inputs<span class="token punctuation">)</span>
+<span class="token keyword keyword-import">import</span> json
+<span class="token comment"># 生成jsonl文件</span>
+output_json_path <span class="token operator">=</span> <span class="token string">'./dataset/controlnet/keyboard_102/train.jsonl'</span>
+new_jsonl <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+<span class="token comment"># 遍历每一张图片的"image"</span>
+<span class="token keyword keyword-for">for</span> i <span class="token keyword keyword-in">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token builtin">len</span><span class="token punctuation">(</span>out<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    image_info <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token string">"text"</span><span class="token punctuation">:</span> processor<span class="token punctuation">.</span>decode<span class="token punctuation">(</span>out<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">,</span> skip_special_tokens<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span><span class="token operator">+</span><span class="token string">",iflyskin"</span><span class="token punctuation">,</span> <span class="token string">"image"</span><span class="token punctuation">:</span> <span class="token string-interpolation"><span class="token string">f"images/</span><span class="token interpolation"><span class="token punctuation">{</span>i<span class="token punctuation">}</span></span><span class="token string">.png"</span></span><span class="token punctuation">,</span>\\
+    <span class="token string">"conditioning_image"</span><span class="token punctuation">:</span> <span class="token string-interpolation"><span class="token string">f"conditioning_images/</span><span class="token interpolation"><span class="token punctuation">{</span>i<span class="token punctuation">}</span></span><span class="token string">.png"</span></span><span class="token punctuation">}</span>
+    new_jsonl<span class="token punctuation">.</span>append<span class="token punctuation">(</span>image_info<span class="token punctuation">)</span>
+<span class="token comment"># 将jsonl数据写入到jsonl文件中</span>
+<span class="token keyword keyword-with">with</span> <span class="token builtin">open</span><span class="token punctuation">(</span>output_json_path<span class="token punctuation">,</span> <span class="token string">'w'</span><span class="token punctuation">)</span> <span class="token keyword keyword-as">as</span> json_file<span class="token punctuation">:</span>
+    <span class="token keyword keyword-for">for</span> image_info <span class="token keyword keyword-in">in</span> new_jsonl<span class="token punctuation">:</span>
+        json_line <span class="token operator">=</span> json<span class="token punctuation">.</span>dumps<span class="token punctuation">(</span>image_info<span class="token punctuation">,</span> indent<span class="token operator">=</span><span class="token boolean">None</span><span class="token punctuation">)</span>
+        json_file<span class="token punctuation">.</span>write<span class="token punctuation">(</span>json_line <span class="token operator">+</span> <span class="token string">'\n'</span><span class="token punctuation">)</span>
+</code></pre><p>具体可参考 <code>/train21/intellQA/permanent/kunhu10/diffusers-main/caption.py</code> 文件</p>
+<h4 id="模型训练-1">模型训练 </h4>
+<ul>
+<li>更改 <code>controlnet.sh</code> 中的数据集路径 <code>train_data_dir</code> 即可训练，训练代码不做修改</li>
+</ul>
+<h4 id="实验结果">实验结果 </h4>
+<ul>
+<li><code>diffusers-main</code> 中封装好了用于推理步骤的 pipeline 用于生成图片，使用方法如下：</li>
+</ul>
+<pre data-role="codeBlock" data-info="py" class="language-python py"><code><span class="token keyword keyword-from">from</span> diffusers <span class="token keyword keyword-import">import</span> StableDiffusionXLControlNetPipeline<span class="token punctuation">,</span> ControlNetModel<span class="token punctuation">,</span> UniPCMultistepScheduler
+<span class="token keyword keyword-from">from</span> diffusers<span class="token punctuation">.</span>utils <span class="token keyword keyword-import">import</span> load_image
+<span class="token keyword keyword-import">import</span> torch
+
+base_model_path <span class="token operator">=</span> "<span class="token operator">/</span>train21<span class="token operator">/</span>intellQA<span class="token operator">/</span>permanent<span class="token operator">/</span>kunhu10<span class="token operator">/</span>diffusers<span class="token operator">-</span>main<span class="token operator">/</span>base_models<span class="token operator">/</span>stable<span class="token operator">-</span>diffusion<span class="token operator">-</span>xl<span class="token operator">-</span>base<span class="token operator">-</span><span class="token number">1.0</span>
+controlnet_path <span class="token operator">=</span> <span class="token string">"/train21/intellQA/permanent/kunhu10/diffusers-main/saved_models/controlnet_sdxl/test_version_24/checkpoint-16000/controlnet"</span>  <span class="token comment"># 待测试的controlnet保存位置</span>
+controlnet <span class="token operator">=</span> ControlNetModel<span class="token punctuation">.</span>from_pretrained<span class="token punctuation">(</span>controlnet_path<span class="token punctuation">,</span> torch_dtype<span class="token operator">=</span>torch<span class="token punctuation">.</span>float16<span class="token punctuation">)</span> <span class="token comment">#加载controlnet</span>
+pipe <span class="token operator">=</span> StableDiffusionXLControlNetPipeline<span class="token punctuation">.</span>from_pretrained<span class="token punctuation">(</span>
+    base_model_path<span class="token punctuation">,</span> controlnet<span class="token operator">=</span>controlnet<span class="token punctuation">,</span> torch_dtype<span class="token operator">=</span>torch<span class="token punctuation">.</span>float16
+<span class="token punctuation">)</span>
+pipe<span class="token punctuation">.</span>to<span class="token punctuation">(</span><span class="token string">"cuda"</span><span class="token punctuation">)</span>
+<span class="token comment"># speed up diffusion process with faster scheduler and memory optimization</span>
+pipe<span class="token punctuation">.</span>scheduler <span class="token operator">=</span> UniPCMultistepScheduler<span class="token punctuation">.</span>from_config<span class="token punctuation">(</span>pipe<span class="token punctuation">.</span>scheduler<span class="token punctuation">.</span>config<span class="token punctuation">)</span>
+<span class="token comment"># remove following line if xformers is not installed or when using Torch 2.0</span>
+pipe<span class="token punctuation">.</span>enable_xformers_memory_efficient_attention<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token comment"># memory optimization</span>
+pipe<span class="token punctuation">.</span>enable_model_cpu_offload<span class="token punctuation">(</span><span class="token punctuation">)</span>
+prompt <span class="token operator">=</span> <span class="token string">"a picture of ..."</span>
+control_image <span class="token operator">=</span> load_image<span class="token punctuation">(</span><span class="token string">"...."</span><span class="token punctuation">)</span>
+generator <span class="token operator">=</span> torch<span class="token punctuation">.</span>manual_seed<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span>
+image <span class="token operator">=</span> pipe<span class="token punctuation">(</span>
+    prompt<span class="token operator">=</span>prompt<span class="token punctuation">,</span>image<span class="token operator">=</span>control_image<span class="token punctuation">,</span>num_inference_steps<span class="token operator">=</span><span class="token number">20</span><span class="token punctuation">,</span>generator<span class="token operator">=</span>generator
+<span class="token punctuation">)</span><span class="token punctuation">.</span>images<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span>
+</code></pre><ul>
+<li>
+<p>StableDiffusionXLControlNetPipeline 还支持包括tensor类型的text_embeds，以及image_embeds 等多种输入，输出类型也有 tensor, numpy_array, image 多种，具体可查看 <code>/train21/intellQA/permanent/kunhu10/diffusers-main/src/diffusers/pipelines/controlnet/pipeline_controlnet_sd_xl.py</code> 中定义的 <code>StableDiffusionXLControlnetPipeline</code>类</p>
+</li>
+<li>
+<p>批量推理图片 <code>/train21/intellQA/permanent/kunhu10/diffusers-main/inferece.py</code> 中实现</p>
+</li>
+<li>
+<p>在使用 50 张较好图片训练 3000 step 以及 6000 step 的结果如下<br>
+<img src="./README_files/wholekeyboard_result.png" width="300" height="300"> &nbsp;&nbsp;<img src="./README_files/wholekeyboard_result2.png" width="300" height="300"></p>
+</li>
+</ul>
+<h3 id="-实验二分块键盘皮肤数据训练">😀 实验二：分块键盘皮肤数据训练 </h3>
+<h4 id="数据集准备-2">📕数据集准备 </h4>
+<ul>
+<li>鉴于全键盘皮肤难以使用，提供数据中包括相当一部分将键盘皮肤切分成如下四块的新规范<br>
+<img src="./README_files/4parts_keyboard.png" width="300" height="300"></li>
+</ul>
+<p>🤗<strong>使用同一 conditioning_image</strong></p>
+<ul>
+<li>
+<p>收集该类皮肤数据并统一大小，共收集 2000 张，保存于 <code>/train21/intellQA/permanent/kunhu10/diffusers-main/dataset/controlnet/keyboard2k</code> 中</p>
+</li>
+<li>
+<p>在 <code>keyboard2k</code> 数据集下，使用的控制图片都是下面的 <strong>同一张</strong>，旨在通过同一张控制图片回归到不同的皮肤，增强皮肤生成的多样性<br>
+<img src="./README_files/4parts_keyboard_c.png" width="300" height="300"></p>
+</li>
+<li>
+<p><code>/train21/intellQA/permanent/kunhu10/diffusers-main/dataset/controlnet/keyboard2k/keyboard2k.py</code> 对数据集路径已经进行了修改</p>
+</li>
+<li>
+<p>由于 2k 张图片中大部分不同部分的图层叠加不正确，又重新筛选了对应关系较好的数据，共102张 (底图反映在预览图上，且具有键盘样式)，数据文件以及数据集构建方法在  <code>/train21/intellQA/permanent/kunhu10/diffusers-main/dataset/controlnet/keyboard_102/</code> 中</p>
+</li>
+</ul>
+<p>🤗<strong>conditioning_image 渲染文字</strong></p>
+<ul>
+<li>
+<p>尝试在控制图片上渲染上目标图片的文字，达到生成皮肤中按要求出现文字的目的</p>
+</li>
+<li>
+<p>使用 paddle OCR 检测出文本所在 box 以及文本，将准确度大于0.98 的文本渲染到统一的描边背景上</p>
+</li>
+<li>
+<p>实现在 <code>/train21/intellQA/permanent/kunhu10/GlyphControl/ocr.py</code> 中，主体如下：<br>
+<img src="./README_files/render_back.png" width="800" height="380"></p>
+<ul>
+<li>其中 background_path 即统一描边背景图，若运行时 paddleocr 报错缺少 <code>.so</code> 文件等，考虑 <code>module load gcc/xxx</code> 和 <code>module load cuda/11.7</code></li>
+<li>在离线状态下，paddleOCR 无法下载文本检测以及识别模型权重，需要手动下载，并更改 <code>tools/infer/utilify.py</code> 中的参数，具体参考(<a href="https://blog.csdn.net/weixin_47151919/article/details/122066480">https://blog.csdn.net/weixin_47151919/article/details/122066480</a>)<br>
+<img src="./README_files/ppocr_param.png" width="700" height="100"></li>
+</ul>
+</li>
+<li>
+<p>渲染文字后的描边图构建的数据集保存在<code>/train21/intellQA/permanent/kunhu10/diffusers-main/dataset/controlnet/keyboard_102/</code> 中</p>
+</li>
+</ul>
+<h4 id="模型训练-2">模型训练 </h4>
+<ul>
+<li>训练代码不做修改，训练脚本中注意更改分辨率参数 <code>--resolution</code></li>
+<li>如果是微调实验只需在训练脚本参数中加上 <code>--controlnet_model_name_or_path</code> ，为微调的基础模型路径</li>
+<li>按照不同 conditioning_image 以及不同分辨率进行了一系列实验</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>实验编号</th>
+<th>type</th>
+<th>dataset-size</th>
+<th>conditioning-image</th>
+<th>resolution</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>从头训练</td>
+<td>2k</td>
+<td>所有数据使用同一控制图</td>
+<td>512</td>
+<td>多样性较好，图层叠加不对应</td>
+</tr>
+<tr>
+<td>2</td>
+<td>从头训练</td>
+<td>102</td>
+<td>所有数据使用同一控制图</td>
+<td>512</td>
+<td>图层叠加对应，训练到稳定结构后理解文本差</td>
+</tr>
+<tr>
+<td>3</td>
+<td>微调 Canny</td>
+<td>102</td>
+<td>所有数据使用同一控制图</td>
+<td>512</td>
+<td></td>
+</tr>
+<tr>
+<td>4</td>
+<td>从头训练</td>
+<td>102</td>
+<td>每张控制图渲染对应文字</td>
+<td>1024</td>
+<td></td>
+</tr>
+<tr>
+<td>5</td>
+<td>微调 Canny</td>
+<td>102</td>
+<td>每张控制图渲染对应文字</td>
+<td>1024</td>
+<td>结构稳定文本理解较好，多样性一般</td>
+</tr>
+</tbody>
+</table>
+<h4 id="实验结果-1">实验结果 </h4>
+<ul>
+<li>符合基本键盘规范，模型学习到相关结构布局信息<br>
+<img src="./README_files/4parts_results1.png" width="300" height="300"> &nbsp;&nbsp;<img src="./README_files/4parts_results2.png" width="300" height="300"></li>
+</ul>
+<h2 id="3-阶段3">3. 阶段3 </h2>
+<h3 id="-实验一关键键盘元素布局皮肤">😀 实验一：关键键盘元素布局皮肤 </h3>
+<ul>
+<li>为了进一步适应使用需求，要求皮肤布局仅需要关键元素如导航栏，功能键，26键，9键背景等，如下图<br>
+<img src="./README_files/key_elements_ex.png" width="300" height="300"></li>
+</ul>
+<h4 id="-数据准备">📕 数据准备 </h4>
+<ul>
+<li>从皮肤商城以及社区皮肤中筛选了部分可用数据，这些皮肤是按照协议组合各个元素图片而成，对于每个键盘皮肤，有如下文件夹，包含了各个键的图片文件<br>
+<img src="./README_files/key_elements_folder.png" width="400" height="300"></li>
+<li>这些文件夹统一保存在 <code>/train21/intellQA/permanent/kunhu10/GlyphControl/image_path_folder/</code> 中</li>
+<li>布局这些元素到同一张画布上，制定了一定的规则 (各个功能键的在画布上的位置)，主要实现在 <code>load_image</code> 函数中，定义了每个按键元素的大小以及位置</li>
+<li>实现方式在 <code>/train21/intellQA/permanent/kunhu10/GlyphControl/merge_image.py</code> 中<br>
+<img src="./README_files/merge_images.png" width="600" height="450"></li>
+<li>经过两次提取，一共得到 332 张可用皮肤，conditioning_images 以及文本标签等按照之前方法创建，保存在 <code>/train21/intellQA/permanent/kunhu10/diffusers-main/dataset/controlnet/keyboard_332_512/</code> 以及  <code>/train21/intellQA/permanent/kunhu10/diffusers-main/dataset/controlnet/keyboard_332_1024/</code> 中，二者分辨率不同<br>
+<img src="./README_files/key_elements_demo.png" width="300" height="300"></li>
+</ul>
+<h4 id="模型训练-3">模型训练 </h4>
+<ul>
+<li>训练方式与之前相同，当训练 1024×1024 的图像时，需使用 80GB 显卡</li>
+<li>多卡并行训练是通过 accelerate 实现的，设置参数时，在命令行 <code>accelerate config</code> 进行选择或者在<code>home</code>目录下更改 <code>.cache/huggingface/accelarate/defaut_config.yaml</code> 文件，如修改为8卡并行的配置如下<pre data-role="codeBlock" data-info="sh" class="language-bash sh"><code>compute_environment: LOCAL_MACHINE
+  distributed_type: MULTI_GPU
+  downcast_bf16: <span class="token string">'no'</span>
+  gpu_ids: all
+  machine_rank: <span class="token number">0</span>
+  main_training_function: main
+  mixed_precision: <span class="token string">'no'</span>
+  num_machines: <span class="token number">1</span>
+  num_processes: <span class="token number">8</span>
+  rdzv_backend: static
+  same_network: <span class="token boolean">false</span>
+  tpu_env: <span class="token punctuation">[</span><span class="token punctuation">]</span>
+  tpu_use_cluster: <span class="token boolean">false</span>
+  tpu_use_sudo: <span class="token boolean">false</span>
+  use_cpu: <span class="token boolean">false</span>
+</code></pre></li>
+</ul>
+<h4 id="实验结果-2">实验结果 </h4>
+<ul>
+<li>与预期符合，布局规范，但是图片中文本部分仍然存在问题<br>
+<img src="./README_files/key_elements_results1.png" width="300" height="300"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./README_files/key_elements_results2.png" width="300" height="300"></li>
+</ul>
+<h3 id="-实验二添加ctc-loss监督图片中的文本生成">😀 实验二：添加ctc-loss监督图片中的文本生成 </h3>
+<h4 id="-数据准备-1">📕 数据准备 </h4>
+<ul>
+<li>
+<p>监督是否生成可识别文本，数据中需包含正确文本的标签以及图片中文本所在区域信息</p>
+</li>
+<li>
+<p>在 <code>train.jsonl</code> 文件中进行了修改，此时每一行为如下键值对，保存在 <code>/train21/intellQA/permanent/kunhu10/diffusers-main/dataset/controlnet/keyboard_332_512/</code></p>
+<pre data-role="codeBlock" data-info="" class="language-text text"><code>{"text":"a picture of a girl with long hair, iflyskin, writing \"前往 \","image":"images/0.png",
+"conditioning_image":"conditioning_images/0.png",
+"box":[[[430.0,174.0],[450.0,174.0],[450.0,186.0],[430.0,186.0]]]}
+</code></pre></li>
+<li>
+<p>对数据集加载方法 (<code>/train21/intellQA/permanent/kunhu10/diffusers-main/dataset/controlnet/keyboard_332_512/keyboard_332_512.py</code>) 进行修改，添加新的数据格式多维数组<br>
+<img src="./README_files/keyboard_box.png" width="400" height="130"></p>
+</li>
+<li>
+<p>对于数据集准备以及加载dataloader的部分进行修改，保存于 <code>/train21/intellQA/permanent/kunhu10/diffusers-main/train_controlnet_sdxl_own.py</code> 中</p>
+</li>
+<li>
+<p>修改 <code>prepare_train_dataset</code> 函数中 <code>process_train</code> 如下：<br>
+<img src="./README_files/process_train.png" width="700" height="430"></p>
+</li>
+<li>
+<p>修改 <code>collate_fn</code> 函数如下：<br>
+<img src="./README_files/collate_fn.png" width="700" height="330"><br>
+其中 <code>gt_text,text_length,box</code> 是每条数据新增的输入类型，分别表示ground-truth的文本标签，文本长度以及文本框位置，用于监督文本生成</p>
+</li>
+</ul>
+<h4 id="模型训练-4">模型训练 </h4>
+<p>🤗<code>train_controlnet_sdxl_own.py</code> <strong>修改</strong></p>
+<ul>
+<li>
+<p>添加用于ppocr识别的字典，即使用一个保存了常见汉字符的文本文件创建dict<br>
+<img src="./README_files/dict.png" width="600" height="100"></p>
+</li>
+<li>
+<p>初始化了用于文本识别的ppocr模型，其相关实现以及模型权重保存在 <code>/train21/intellQA/permanent/kunhu10/diffusers-main/Anytext/</code> 中, <code>text_recognizer</code> 用于后续在训练过程中对监督推理图片中的文本部分<br>
+<img src="./README_files/text_recognize.png" width="650" height="100"></p>
+</li>
+<li>
+<p>在训练过程中边训练边推理当前模型的出图结果，使用 <code>infer_img</code> 函数实现推理过程<br>
+<img src="./README_files/infer_img.png" width="650" height="500"><br>
+给定当前 <code>batch</code> 以及 <code>vae</code>,<code>unet</code> (冻结) 以及 <code>controlnet</code> (训练) 模型，即可得到输出 images tensor</p>
+</li>
+<li>
+<p>计算 ctc_loss 的实现在<code>/train21/intellQA/permanent/kunhu10/diffusers-main/Anytext/recognizer.py</code> 中。本实验中使用 <code>OCR_ctcloss</code> 函数接收预测图片以及标签计算损失<br>
+<img src="./README_files/loss_ctc.png" width="750" height="250"></p>
+</li>
+<li>
+<p>一次forward 计算 <code>loss_ctc</code> 的过程如下</p>
+<pre data-role="codeBlock" data-info="py" class="language-python py"><code><span class="token keyword keyword-for">for</span> epoch <span class="token keyword keyword-in">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span>first_epoch<span class="token punctuation">,</span>args<span class="token punctuation">.</span>num_train_epochs<span class="token punctuation">)</span><span class="token punctuation">:</span>
+      <span class="token keyword keyword-for">for</span> step<span class="token punctuation">,</span>batch <span class="token keyword keyword-in">in</span> <span class="token builtin">enumerate</span><span class="token punctuation">(</span>train_dataloader<span class="token punctuation">)</span><span class="token punctuation">:</span>
+          infer_images <span class="token operator">=</span> infer_img<span class="token punctuation">(</span>args<span class="token punctuation">,</span>accelerator<span class="token punctuation">,</span>noise_scheduler<span class="token punctuation">,</span>vae<span class="token punctuation">,</span>unet<span class="token punctuation">,</span>controlnet<span class="token punctuation">,</span>weight_dtype<span class="token punctuation">,</span>batch<span class="token punctuation">)</span>
+          preds<span class="token punctuation">,</span>loss_text <span class="token operator">=</span> OCR_ctcloss<span class="token punctuation">(</span>infer_images<span class="token punctuation">,</span>text_recognizer<span class="token punctuation">,</span>bacth<span class="token punctuation">)</span>
+          loss_text <span class="token operator">=</span> loss_text<span class="token punctuation">.</span>to<span class="token punctuation">(</span>accelerator<span class="token punctuation">.</span>device<span class="token punctuation">)</span>
+</code></pre></li>
+<li>
+<p>模型训练脚本文件保存为 <code>/train21/intellQA/permanent/kunhu10/diffusers-main/controlnet_own.sh</code></p>
+</li>
+</ul>
+<h4 id="实验结果-3">实验结果 </h4>
+<ul>
+<li>loss_text 难以下降</li>
+</ul>
+<h2 id="4-后续">4. 后续 </h2>
+<ul>
+<li>增加数据集大小从头训练，数百个数据相对较少</li>
+<li>文本损失难以优化，关注后续 <a href="https://github.com/tyxsspa/AnyText">Anytext</a> 开源后，参考实现方式</li>
+<li>SD3 使用 transformer 替代 Unet backbone, 对文本生成友好，关注后续实现工作</li>
+</ul>
+
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+  </body></html>
